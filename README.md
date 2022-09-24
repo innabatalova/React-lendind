@@ -1,3 +1,3 @@
-# React-learn
+# React project
 
-My learning job on react technology
+Interface app on React.
