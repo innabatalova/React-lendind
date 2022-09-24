@@ -15,14 +15,25 @@ module.exports = {
     children: true,
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.ts(x?)$/,
         exclude: /node_modules/,
         use: [
-            {
-                loader: "ts-loader",
-            },
+            
+                "ts-loader"
         ],
+    },
+
+    {
+      test: /\.jsx?$/, // обновляем регулярное выражение для поддержки jsx
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          cacheDirectory: true,
+        },
+      },
     },
         {
             test: /\.js$/,
@@ -31,6 +42,7 @@ module.exports = {
               loader: "babel-loader"
             },
           },
+         
       {
         test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
@@ -46,6 +58,10 @@ module.exports = {
       },
 
     ],
+    
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
 
   devServer: {
