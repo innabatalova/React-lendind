@@ -1,0 +1,25 @@
+.mac-round{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 55px;
+        height: 15px;
+    }
+    
+    &_red{
+        background-color: red;
+    }
+
+    &_yellow{
+        background-color: yellow;
+    }
+
+    &_green{
+        background-color: green;
+    }
+}

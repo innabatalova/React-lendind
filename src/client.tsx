@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 import "./scss/style.scss"
 
-import  App  from "./components/mac-round"
+import  Nav  from "./blocks/navigation/navigation"
 // function formatName(user: Record<string, any>) {
 //     return user.firstName + ' ' + user.lastName;
 //   }
@@ -18,7 +18,7 @@ import  App  from "./components/mac-round"
 //   );
 
 
-const element = <App/>;
+const element = <Nav/>;
 
 
 

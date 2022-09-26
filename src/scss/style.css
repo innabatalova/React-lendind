@@ -309,8 +309,16 @@ template {
 }
 
 .macround {
-  width: 15px;
-  height: 15px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+}
+.macround_red {
+  background-color: red;
+}
+.macround_yellow {
   background-color: yellow;
+}
+.macround-green {
+  background-color: green;
 }/*# sourceMappingURL=style.css.map */
