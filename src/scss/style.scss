@@ -1,5 +1,7 @@
 @import "./_normalize";
+@import "./setting";
 
+@import "../blocks/_navigation";
 
 @import "../components/navigation/mac-round/_mac-round";
 @import "../components/navigation/nav-apps/_nav-apps";

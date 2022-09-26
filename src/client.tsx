@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 import "./scss/style.scss"
 
-import  Nav  from "./blocks/navigation/navigation"
+import  Nav  from "./blocks/navigation"
 // function formatName(user: Record<string, any>) {
 //     return user.firstName + ' ' + user.lastName;
 //   }
