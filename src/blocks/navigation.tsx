@@ -11,6 +11,7 @@ import NavImg5 from '../static/img/nav-item-5.svg'
 import NavImg6 from '../static/img/nav-item-6.svg'
 import NavImg7 from '../static/img/nav-item-7.svg'
 
+
 function Nav() {
     return (
     <div className="navigation">
@@ -21,13 +22,13 @@ function Nav() {
       </div >
 
       <div className="nav-apps__wrapper">
-        <NavAppsItem src={NavImg1}/>
-        <NavAppsItem src={NavImg2}/>
-        <NavAppsItem src={NavImg3}/>
-        <NavAppsItem src={NavImg4}/>
-        <NavAppsItem src={NavImg5}/>
-        <NavAppsItem src={NavImg6}/>
-        <NavAppsItem src={NavImg7}/>
+      <NavAppsItem src={NavImg1}/>
+      <NavAppsItem src={NavImg2}/>
+      <NavAppsItem src={NavImg3}/>
+      <NavAppsItem src={NavImg4}/>
+      <NavAppsItem src={NavImg5}/>
+      <NavAppsItem src={NavImg6}/>
+      <NavAppsItem src={NavImg7}/>
       </div >
 
       <NavPlus/>
