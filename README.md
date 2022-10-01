@@ -15,6 +15,7 @@ Interface app on React.
 $ npm install 
 
 $ npm build
+
 $ npm start
 
 
