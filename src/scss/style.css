@@ -308,17 +308,73 @@ template {
   display: none;
 }
 
-.macround {
-  width: 150px;
-  height: 150px;
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  padding: 10px 10px 15px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.mac-round {
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
 }
-.macround_red {
+.mac-round__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55px;
+  height: 15px;
+  margin-bottom: 20px;
+}
+.mac-round_red {
   background-color: red;
 }
-.macround_yellow {
+.mac-round_yellow {
   background-color: yellow;
 }
-.macround-green {
+.mac-round_green {
   background-color: green;
+}
+
+.nav-apps__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-apps__wrapper img {
+  opacity: 0.5;
+}
+.nav-apps__item {
+  cursor: pointer;
+}
+
+.nav-plus {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #25272A;
+  cursor: pointer;
+  justify-self: self-end;
+  margin-top: auto;
+}
+.nav-plus:focus, .nav-plus:hover, .nav-plus:active {
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */
