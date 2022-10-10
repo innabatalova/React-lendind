@@ -1,7 +1,6 @@
 .channels-item{
     min-width: 215px;
-    max-height: 30px;
-    padding: 4px 13px 9px;
+    padding: 9px 13px;
     border-radius: 5px;
     font-family: 'Lato';
     font-style: normal;
@@ -10,12 +9,17 @@
     line-height: 17px;
     color: #B5B5B5;
     background-color: inherit;
+    cursor: pointer;
 
     &:focus, &:hover, &:active {
         color: #FFFFFF;
         font-weight: 700;
         background-color: #B5B5B5;
-
+        position: relative;
+        width: 110%;
+        left: -5%;
+        right: -5%;
+        padding-left: calc(13px + 5%);
     }
     
 }

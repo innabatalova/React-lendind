@@ -14,6 +14,16 @@ import NavImg7 from '../static/img/nav-item-7.svg'
 
 
 function Nav() {
+
+   function handleClickWrap(): void {
+          const arrIcons = document.querySelectorAll(".nav-apps__item")
+          arrIcons.forEach(function(item: HTMLImageElement){
+          item.style.opacity = "0.5"
+          })        
+            
+        };
+
+
     return (
     <div className="navigation">
       <div className="mac-round__wrapper">
@@ -23,7 +33,7 @@ function Nav() {
       </div >
 
 
-      <div className="nav-apps__wrapper">
+      <div className="nav-apps__wrapper" onClick={handleClickWrap}>
       <NavAppsItem src={NavImg1}/>
       <NavAppsItem src={NavImg2}/>
       <NavAppsItem src={NavImg3}/>

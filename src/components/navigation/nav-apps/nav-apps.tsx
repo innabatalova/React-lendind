@@ -15,19 +15,18 @@ class NavAppsItem extends React.Component <ControlProps> {
     this.src = props.src;
   }
 
-  handleSubmit(e: React.SyntheticEvent<EventTarget>): void {
-          const arrIcons = document.querySelectorAll(".nav-apps__item")
-          arrIcons.forEach(function(item: HTMLImageElement){
-          item.style.opacity = "0.5"
-           })  
-           
+  handleClick(e: React.SyntheticEvent<EventTarget>): void { 
+          function addActive(){
             let target = e.target as HTMLInputElement;
             target.style.opacity = "1";
+          }
+
+          setTimeout(addActive, 0)
             
         };
 
   render() {
-    return <img src={this.src} className={`nav-apps__item`} onClick={this.handleSubmit}
+    return <img src={this.src} className={`nav-apps__item`} onClick={this.handleClick}
     />;
     
   }
