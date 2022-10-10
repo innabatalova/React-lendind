@@ -1,4 +1,5 @@
 import React from 'react'
+
 import MacRoundItem from '../components/navigation/mac-round/mac-round'
 import NavAppsItem from '../components/navigation/nav-apps/nav-apps'
 import NavPlus from '../components/navigation/nav-plus/nav-plus'
@@ -20,6 +21,7 @@ function Nav() {
         <MacRoundItem class="mac-round_yellow"/>
         <MacRoundItem class="mac-round_green"/>
       </div >
+
 
       <div className="nav-apps__wrapper">
       <NavAppsItem src={NavImg1}/>
