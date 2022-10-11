@@ -3,11 +3,10 @@
   flex-wrap: wrap;
   min-width: 260px;
   padding-top: 25px;
-  padding-bottom: 15px;
   background-color: #25272A;
   opacity: 0.75;
 
-  &-title, &-treads, &-channel{
+  &-title, &-treads, &-channel, &-friends{
     &-wrap{
       display: flex !important;
       align-items: center;
@@ -22,7 +21,7 @@
     }
   }
 
-  &-channel{
+  &-channel, &-friends{
     &-wrap{
       margin-bottom: 10px;
       font-family: 'Lato';
@@ -55,5 +54,54 @@
     font-size: 14px;
     line-height: 17px;
     color: #B5B5B5;
+  }
+}
+
+.channel{
+
+  &-wrapper{
+  margin-bottom: 30px;
+  overflow-y: scroll;
+  max-height: 40vh;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: inherit;
+      }
+
+    &::-webkit-scrollbar-thumb{
+      width: 6px;
+      height: 140px;
+      background-color: #B5B5B5;
+      border-radius: 12px;
+    }
+  }
+}
+
+.friends{
+
+  &-wrapper{
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+      width: 6px;
+      background-color: inherit;
+      }
+
+    &::-webkit-scrollbar-thumb{
+      width: 6px;
+      height: 140px;
+      background-color: #B5B5B5;
+      border-radius: 12px;
+    }
+  }
+}
+
+@media screen and ( max-height: 700px ) {
+  .friends{
+
+    &-wrapper{
+    height: 25vh;
+    }
   }
 }
