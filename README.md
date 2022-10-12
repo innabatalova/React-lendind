@@ -12,11 +12,11 @@ Interface app on React.
 
 # Install and start
 
-$ npm install 
+"$" npm install 
 
-$ npm build
+"$" npm build
 
-$ npm start
+"$" npm start
 
 # Link to layout
 https://www.figma.com/file/SczQd9Jl1bG3CHCgxCGW7V/Chat-Desktop-App-macOS-(Copy)?node-id=0%3A2
