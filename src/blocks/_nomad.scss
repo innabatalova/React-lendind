@@ -101,12 +101,12 @@
   .friends{
 
     &-wrapper{
-    height: 25vh;
+      height: 35vh;
     }
   }
 }
 
-@media screen and ( max-height: 580px ) {
+@media screen and ( max-height: 550px ) {
   .nomad{
     padding-top: 10px;
 
@@ -149,3 +149,13 @@
       }
 
   }
+
+@media screen and ( max-height: 400px ) {
+  .friends{
+
+      &-wrapper{
+        height: 25vh;
+      }
+
+  }
+}

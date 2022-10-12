@@ -25,11 +25,11 @@
 
   &__name{
     font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #B5B5B5;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B5B5B5;
 
   &:focus, &:hover, &:active {
         color: rgb(233, 222, 222);
@@ -39,4 +39,21 @@
 
 .online{
   background-color: #70CC16;
+}
+
+@media screen and ( max-height: 700px ){
+
+  .frends-item{
+
+    &__avatar{
+      width: 20px;
+      height: 20px;
+    }
+
+    &__name{
+      font-size: 11px;
+      line-height: 13px;
+    }
+
+  }
 }
