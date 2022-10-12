@@ -5,15 +5,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-
-        & img{
-            opacity: 0.5;
-        }
     }
 
     &__item{
         cursor: pointer;
+        opacity: 0.5;
     }
+}
+
+.active {
+    opacity: 1;
 }
 
 @media screen and ( max-height: 700px ) {

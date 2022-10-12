@@ -18,7 +18,7 @@ function Nav() {
    function handleClickWrap(): void {
           const arrIcons = document.querySelectorAll(".nav-apps__item")
           arrIcons.forEach(function(item: HTMLImageElement){
-          item.style.opacity = "0.5"
+          item.classList.remove('active');
           })        
             
         };
@@ -34,7 +34,7 @@ function Nav() {
 
 
       <div className="nav-apps__wrapper" onClick={handleClickWrap}>
-      <NavAppsItem src={NavImg1}/>
+      <NavAppsItem src={NavImg1} class="active"/>
       <NavAppsItem src={NavImg2}/>
       <NavAppsItem src={NavImg3}/>
       <NavAppsItem src={NavImg4}/>
