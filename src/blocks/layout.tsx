@@ -7,9 +7,9 @@ import Chat from "./chat"
 function Layout() {
     return (
         <div className='layout'>
-             <Nav/>
-             <Nomad/>
-             <Chat/>
+        <Nav/>
+        <Nomad/>
+        <Chat/>
         </div>
    
     );

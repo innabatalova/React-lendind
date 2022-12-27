@@ -7,12 +7,19 @@
         "noUnusedLocals": true,
         "removeComments": true,
         "noImplicitAny": true,
+        "downlevelIteration": true, 
         "esModuleInterop": true,
         "baseUrl": "./",
         "paths": { // Указываем ссылки до директорий в проекте, чтобы каждый раз в импортах не писать относительные пути
             "app": ["src/components"],
             "blocks/*": ["src/blocks/*"],
-        }
+        },
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        
     },
     "exclude": [
         "node_modules"

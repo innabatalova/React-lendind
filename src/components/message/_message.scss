@@ -1,0 +1,40 @@
+.message{
+  display: flex;
+
+  &__avatar{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 12px;
+  }
+
+  &__name{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin-right: 8px;
+  }
+
+  &__date{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8D8D8D;
+  }
+
+  &__text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+}
