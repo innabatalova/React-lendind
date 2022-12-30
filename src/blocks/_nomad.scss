@@ -81,7 +81,8 @@
 .friends{
 
   &-wrapper{
-  overflow-y: scroll;
+    height: 43vh;
+    overflow-y: scroll;
 
   &::-webkit-scrollbar {
       width: 6px;
@@ -158,4 +159,18 @@
       }
 
   }
+}
+
+@media screen and ( max-width: 920px ) {
+    .nomad {
+        min-width: 210px;
+    }
+
+    .channel{
+
+      &-wrapper{
+          margin-bottom: 10px;
+          overflow-x: hidden;
+      }
+    }
 }

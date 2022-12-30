@@ -1,107 +1,18 @@
-$HeaderSearch: url(../static/img/chat-header-search.svg);
-
 .chat{
-
-    &__header{
-      display: flex;
-      align-items: center;
-      height: 100px;
-      border-bottom: 1px solid #A4A4A4;
-
-      &__channel{
-        display: flex !important;
-        justify-content: space-between;
-        width: 110px;
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        color: #000000;
-
-        img{
-          position: relative;
-          top: 4px;
-          width: 14px;
-          height: 14px;
-        }
-      }
-
-      &__search{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-width: 420px;
-
-        &__users{
-          display: flex !important;
-          align-items: center;
-          justify-content: space-between;
-          width: 55px;
-          font-family: 'Lato';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17px;
-          color: #A4A4A4;
-
-          img{
-            width: 10px;
-            height: 14px;
-          }
-        }
-      }
-
-      &__input{
-        position: relative;
-        width: 240px;
-        padding: 9px 17px;
-        background: url(http://localhost:3000/img/chat-header-search.svg) no-repeat;
-        background-position: 90%;
-        border: 1px solid #A4A4A4;
-        border-radius: 5px;
-
-        &::placeholder{
-          font-family: 'Lato';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17px;
-          color: #A4A4A4;
-        }
-
-        &:hover,
-        &:active,
-        &:focus{
-          outline: none;
-        }
-      }
-
-      &__ring{
-        width: 18px;
-        height: 18px;
-      }
-
-      &__menu{
-        display: flex;
-        flex-direction: column;
-        height: 17px;
-        justify-content: space-between;
-
-        &__dot{
-          width: 5px;
-          height: 5px;
-          border-radius: 50%;
-          background-color: #A4A4A4;
-        }
-      }
-    }
+    display: flex;
+    flex-direction: column;
 
     &__wrapper{
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       width: calc(100% - 50px);
       margin: 0 auto;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
 }
