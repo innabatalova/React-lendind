@@ -1,4 +1,5 @@
 import React, { FC } from "react"
+import { IVisibleProps } from '../types'
 
 import ChannelItem from '../components/nomad/Channels-item/Channels-item'
 import FriendsItem from '../components/nomad/Friends-item/Friends-item'
@@ -13,23 +14,23 @@ import AvatarImg6 from '../static/img/friend-avatar-6.jpg'
 import SettingIcon from '../static/img/setting-icon.svg'
 import ChatIcon from '../static/img/chat-icon.svg'
 
-const Nomad: FC = () => {
+const Nomad: FC<IVisibleProps> = ({classVisible, clicked}) => {
 
     const channels: JSX.Element[] = [
-            <ChannelItem value="# general" /> ,
-            <ChannelItem value="# support"/>,
-            <ChannelItem value="# marketing"/>,
-            <ChannelItem value="# thailand"/>,
-            <ChannelItem value="# bali"/>,
-            <ChannelItem value="# poland"/>,
-            <ChannelItem value="# australia"/>,
-            <ChannelItem value="# jobs"/>,
-            <ChannelItem value="# startups"/>,
-            <ChannelItem value="# italy"/>,
-            <ChannelItem value="# freelance"/> ];
+            <ChannelItem value="# general" clicked={clicked}/> ,
+            <ChannelItem value="# support" clicked={clicked}/>,
+            <ChannelItem value="# marketing" clicked={clicked}/>,
+            <ChannelItem value="# thailand" clicked={clicked}/>,
+            <ChannelItem value="# bali" clicked={clicked}/>,
+            <ChannelItem value="# poland" clicked={clicked}/>,
+            <ChannelItem value="# australia" clicked={clicked}/>,
+            <ChannelItem value="# jobs" clicked={clicked}/>,
+            <ChannelItem value="# startups" clicked={clicked}/>,
+            <ChannelItem value="# italy" clicked={clicked}/>,
+            <ChannelItem value="# freelance" clicked={clicked}/> ];
 
     const channelsLenght: number = channels.length;
-    const listChannels: JSX.Element[] = channels.map((number) =><>{number}</>);
+    const listChannels: JSX.Element[] = channels.map((number) =><>{number }</>);
 
     const friends: JSX.Element[] = [
             <FriendsItem name="Orlando Diggs" src={AvatarImg1} classFriend="online" />,
@@ -43,7 +44,7 @@ const Nomad: FC = () => {
     const listFriends: JSX.Element[] = friends.map((number) =><>{number}</>)
 
     return (
-    <div className='nomad'>
+    <div className={`nomad ` + classVisible}>
         <div className="container">
         <div className="nomad-title-wrap">
             <h2 className="nomad__title">Nomad List</h2>
@@ -57,12 +58,12 @@ const Nomad: FC = () => {
 
         <div className="nomad-channel">
 
-            <div className="nomad-channel-wrap">
+            <div className="nomad-channel-wrap"  >
                 <h4 className="nomad-channel__title">Channel</h4>
                 <span className="nomad-channel__counter">{channelsLenght}</span>
             </div>
         
-        <div className="channel-wrapper">  {listChannels}  </div>  
+        <div className="channel-wrapper">{listChannels}</div>  
 
         </div>
 
