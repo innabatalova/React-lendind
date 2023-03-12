@@ -1,18 +1,29 @@
 .chat{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     &__wrapper{
       display: flex;
+      height: 100vh;
       flex-direction: column;
-      justify-content: space-between;
       width: calc(100% - 50px);
       margin: 0 auto;
       overflow-y: scroll;
 
       &::-webkit-scrollbar {
-        display: none;
+        width: 6px;
+        background-color: inherit;
+        }
+  
+      &::-webkit-scrollbar-thumb{
+        width: 6px;
+        height: 140px;
+        background-color: #B5B5B5;
+        border-radius: 12px;
       }
-    }
+
+  }
 
 }
+

@@ -1,5 +1,6 @@
 .message{
   display: flex;
+  margin-top: 15px;
 
   &__avatar{
     width: 35px;
@@ -36,5 +37,22 @@
     color: #000000;
     margin-top: 3px;
     margin-bottom: 0;
+
+    &_link, &_special, &_teg{
+      color: #3577EF;
+    }
+  }
+}
+
+@media screen and ( max-width: 400px ){
+
+  .message{
+
+    &__text{
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }

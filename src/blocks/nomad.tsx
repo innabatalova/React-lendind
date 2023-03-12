@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from "react"
 
-import ChannelItem from '../components/nomad/channels-item/channels-item'
-import FriendsItem from '../components/nomad/friends-item/friends-item'
+import ChannelItem from '../components/nomad/Channels-item/Channels-item'
+import FriendsItem from '../components/nomad/Friends-item/Friends-item'
 
 import AvatarImg1 from '../static/img/friend-avatar-1.jpg'
 import AvatarImg2 from '../static/img/friend-avatar-2.jpg'
@@ -13,7 +13,7 @@ import AvatarImg6 from '../static/img/friend-avatar-6.jpg'
 import SettingIcon from '../static/img/setting-icon.svg'
 import ChatIcon from '../static/img/chat-icon.svg'
 
-function Nomad() {
+const Nomad: FC = () => {
 
     const channels: JSX.Element[] = [
             <ChannelItem value="# general" /> ,
@@ -32,16 +32,15 @@ function Nomad() {
     const listChannels: JSX.Element[] = channels.map((number) =><>{number}</>);
 
     const friends: JSX.Element[] = [
-            <FriendsItem name="Orlando Diggs" src={AvatarImg1} class="online" />,
-            <FriendsItem name="Carmen Velasco" src={AvatarImg2} class="online" />,
+            <FriendsItem name="Orlando Diggs" src={AvatarImg1} classFriend="online" />,
+            <FriendsItem name="Carmen Velasco" src={AvatarImg2} classFriend="online" />,
             <FriendsItem name="Marie Jensen" src={AvatarImg3} />,
             <FriendsItem name="Alex Lee" src={AvatarImg4} />,
             <FriendsItem name="Leo Gill" src={AvatarImg5} />,
             <FriendsItem name="Britney Cooper" src={AvatarImg6} /> ];
 
     const friendsLenght: number = friends.length;
-    const listFriends: JSX.Element[] = friends.map((number) =><>{number}</>);
-    
+    const listFriends: JSX.Element[] = friends.map((number) =><>{number}</>)
 
     return (
     <div className='nomad'>
@@ -76,7 +75,7 @@ function Nomad() {
 
         </div>
     </div>
-    );
+    )
   }
 
 

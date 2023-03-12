@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { FC } from "react"
 
 import NavPlusImg from '../../../static/img/plus-icon.svg'
 
-function NavPlus(props: Record<string, string>) {
-  
+const NavPlus: FC = () => {
+
     return <div className="nav-plus">
-               <img src={NavPlusImg} alt="nav plus icon" />
-            </div>;
+        <img src={NavPlusImg} alt="nav plus icon" />
+    </div>;
 }
 
 export default NavPlus;

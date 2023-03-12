@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { FC } from "react"
 
 import HeaderStar from '../../static/img/chat-header-star.svg'
 import HeaderUsers from '../../static/img/chat-header-users.svg'
 import HeaderRing from '../../static/img/chat-header-ring.svg'
 import HeaderSearch from '../../static/img/chat-header-search.svg'
 
-function ChatHeader() {
+const ChatHeader: FC = () => {
     const style = {
       background: 'url(' + HeaderSearch + ') 95% no-repeat',
     }

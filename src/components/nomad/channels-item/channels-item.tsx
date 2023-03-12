@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {FC} from 'react'
 
-function ChannelItem(props: Record<string, string>) {
+import { IChannelItemProps } from '../../../types'
+
+const ChannelItem: FC<IChannelItemProps> = ({value}) => {
     return (
-    <div className="channels-item">{props.value}</div>
+    <div className="channels-item">{value}</div>
     );
   }
 

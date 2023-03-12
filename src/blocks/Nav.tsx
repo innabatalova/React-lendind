@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from "react"
 
-import MacRoundItem from '../components/navigation/mac-round/mac-round'
-import NavAppsItem from '../components/navigation/nav-apps/nav-apps'
-import NavPlus from '../components/navigation/nav-plus/nav-plus'
+import MacRoundItem from '../components/Navigation/Mac-round/Mac-round'
+import NavAppsItem from '../components/Navigation/Nav-apps/Nav-apps'
+import NavPlus from '../components/Navigation/Nav-plus/Nav-plus'
 
 import NavImg1 from '../static/img/nav-item-1.svg'
 import NavImg2 from '../static/img/nav-item-2.svg'
@@ -13,28 +13,25 @@ import NavImg6 from '../static/img/nav-item-6.svg'
 import NavImg7 from '../static/img/nav-item-7.svg'
 
 
-function Nav() {
+const Nav : FC = () => {
 
    function handleClickWrap(): void {
           const arrIcons = document.querySelectorAll(".nav-apps__item")
           arrIcons.forEach(function(item: HTMLImageElement){
           item.classList.remove('active');
           })        
-            
         };
-
 
     return (
     <div className="navigation">
       <div className="mac-round__wrapper">
-        <MacRoundItem class="mac-round_red"/>
-        <MacRoundItem class="mac-round_yellow"/>
-        <MacRoundItem class="mac-round_green"/>
+        <MacRoundItem classRound="mac-round_red"/>
+        <MacRoundItem classRound="mac-round_yellow"/>
+        <MacRoundItem classRound="mac-round_green"/>
       </div >
 
-
       <div className="nav-apps__wrapper" onClick={handleClickWrap}>
-      <NavAppsItem src={NavImg1} class="active"/>
+      <NavAppsItem src={NavImg1} classNavItem="active"/>
       <NavAppsItem src={NavImg2}/>
       <NavAppsItem src={NavImg3}/>
       <NavAppsItem src={NavImg4}/>

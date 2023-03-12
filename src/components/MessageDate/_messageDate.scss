@@ -1,0 +1,22 @@
+.date {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    &__line{
+        height: 2px;
+        background-color: #8D8D8D;
+        opacity: 0.16;
+    }
+
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        color: #8D8D8D;
+    }
+}

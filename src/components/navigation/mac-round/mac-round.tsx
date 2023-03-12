@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from "react"
 
+import { IMacRoundProps } from "../../../types"
 
-function MacRoundItem(props: Record<string, string>) {
-  
-    return <div className={`mac-round ${props.class}`}></div>;
+const MacRoundItem: FC<IMacRoundProps> = ({classRound}) => {
+    return <div className={classRound + ` mac-round`}></div>;
 }
 
 export default MacRoundItem;

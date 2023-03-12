@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { FC } from "react"
 
-import Nav from "./navigation"
-import Nomad from "./nomad"
-import Chat from "./chat"
+import Nav from "./Nav"
+import Nomad from "./Nomad"
+import Chat from "./Chat"
 
-function Layout() {
+const Layout: FC = () => {
     return (
         <div className='layout'>
         <Nav/>
         <Nomad/>
         <Chat/>
         </div>
-   
     );
   }
 
