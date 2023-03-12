@@ -43,3 +43,8 @@ export interface IVisibleProps extends HTMLAttributes<HTMLDivElement> {
 export interface IChatFooterProps extends HTMLAttributes<HTMLDivElement> {
     channelPlaceholder: string;
 }
+
+export interface IStateProps {
+    name: string | null,
+    avatar: string | null
+}
