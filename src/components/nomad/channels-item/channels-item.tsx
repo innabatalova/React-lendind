@@ -6,7 +6,7 @@ const ChannelItem: FC<IChannelItemProps> = ({value, clicked}) => {
 
   const channelPlaceholder = () => {
     let elem: HTMLInputElement = document.querySelector('.chat__footer__message');
-    (elem as HTMLInputElement ).placeholder = value;
+    (elem as HTMLInputElement ).placeholder = `Message in ` + value;
   }
 
     return (
