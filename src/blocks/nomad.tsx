@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react"
 import { IVisibleProps, IStateProps } from '../types'
 import API from '../api/usersApi'
 
-import ChannelItem from '../components/nomad/Channels-item/Channels-item'
-import FriendsItem from '../components/nomad/Friends-item/Friends-item'
+import ChannelItem from '../components/nomad/Channels-item/ChannelItem'
+import FriendsItem from '../components/nomad/Friends-item/FriendsItem'
 
 import AvatarImg1 from '../static/img/friend-avatar-1.jpg'
 import AvatarImg2 from '../static/img/friend-avatar-2.jpg'
@@ -66,7 +66,7 @@ const Nomad = ({ classVisible, clicked }: IVisibleProps) => {
         userDataApi()
     }, []);
 
-    const listFriends: JSX.Element[] = state.map((number) => <>{number}</>)
+    const listFriends: JSX.Element[] = state.map((value) => <>{value}</>)
     const friendsLenght: number = listFriends.length;
 
 
