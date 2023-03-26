@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import MacRoundItem from '../components/Navigation/Mac-round/Mac-round'
 import NavAppsItem from '../components/Navigation/Nav-apps/Nav-apps'
@@ -13,7 +13,7 @@ import NavImg6 from '../static/img/nav-item-6.svg'
 import NavImg7 from '../static/img/nav-item-7.svg'
 
 
-const Nav : FC = () => {
+const Nav = () => {
 
    function handleClickWrap(): void {
           const arrIcons = document.querySelectorAll(".nav-apps__item")

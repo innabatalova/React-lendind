@@ -4,7 +4,7 @@ import { INavAppsProps } from "../../../types"
 
 const NavAppsItem = ({src, classNavItem}: INavAppsProps) => {
 
-  function handleClick(event: React.MouseEvent<HTMLImageElement>): void { 
+  function handleClick(event: any): void { 
           function addActive(){
             let target = event.target as HTMLInputElement;
             target.classList.add('active');

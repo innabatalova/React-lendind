@@ -1,10 +1,8 @@
-import { HTMLAttributes } from "react"
-
-export interface IMessageDateProps extends HTMLAttributes<HTMLSpanElement> {
+export interface IMessageDateProps extends React.HTMLAttributes<HTMLSpanElement> {
     text: string
 }
 
-export interface IMessageProps extends HTMLAttributes<HTMLElement> {
+export interface IMessageProps extends React.HTMLAttributes<HTMLElement> {
     src: string
     name: string
     date: string
@@ -15,32 +13,32 @@ export interface IMessageProps extends HTMLAttributes<HTMLElement> {
     srcImg?: string
 }
 
-export interface IMacRoundProps extends HTMLAttributes<HTMLDivElement> {
+export interface IMacRoundProps extends React.HTMLAttributes<HTMLDivElement> {
     classRound: string
 }
 
-export interface INavAppsProps extends HTMLAttributes<HTMLImageElement> {
+export interface INavAppsProps extends React.HTMLAttributes<HTMLImageElement> {
     src?: string;
     classNavItem?: string;
 }
 
-export interface IChannelItemProps extends HTMLAttributes<HTMLDivElement> {
+export interface IChannelItemProps extends React.HTMLAttributes<HTMLDivElement> {
     value: string;
     clicked?: () => void
 }
 
-export interface IFriendItemProps extends HTMLAttributes<HTMLDivElement> {
+export interface IFriendItemProps extends React.HTMLAttributes<HTMLDivElement> {
     classFriend?: string;
     src: string;
     name: string;
 }
 
-export interface IVisibleProps extends HTMLAttributes<HTMLDivElement> {
+export interface IVisibleProps extends React.HTMLAttributes<HTMLDivElement> {
     classVisible?: string;
     clicked?: () => void
 }
 
-export interface IChatFooterProps extends HTMLAttributes<HTMLDivElement> {
+export interface IChatFooterProps extends React.HTMLAttributes<HTMLDivElement> {
     channelPlaceholder: string;
 }
 
