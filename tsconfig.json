@@ -11,9 +11,6 @@
         "downlevelIteration": true, 
         "esModuleInterop": true,
         "baseUrl": "./",
-        "paths": {
-            "@src/*": ["src/*"],
-          }
         
     },
     "exclude": [
