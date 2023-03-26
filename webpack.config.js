@@ -20,18 +20,7 @@ module.exports = {
         test: /\.json$/,
         use: 'json-loader',
       },
-      {
-        test: /\.(ts)x?$/,
-        exclude: /node_modules|\.d\.ts$/, // this line as well
-        use: {
-          loader: 'ts-loader',
-          options: {
-            compilerOptions: {
-              noEmit: false, // this option will solve the issue
-            },
-          },
-        },
-      },
+
 
       {
         test: /\.jsx?$/, // обновляем регулярное выражение для поддержки jsx
@@ -48,6 +37,19 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
+        },
+      },
+
+      {
+        test: /\.(ts)x?$/,
+        exclude: /node_modules|\.d\.ts$/, // this line as well
+        use: {
+          loader: 'ts-loader',
+          options: {
+            compilerOptions: {
+              noEmit: false, // this option will solve the issue
+            },
+          },
         },
       },
 
