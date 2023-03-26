@@ -17,32 +17,40 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts(x?)$/,
-        exclude: /node_modules/,
-        use: [
-            
-                "ts-loader"
-        ],
-    },
-
-    {
-      test: /\.jsx?$/, // обновляем регулярное выражение для поддержки jsx
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          cacheDirectory: true,
-        },
+        test: /\.json$/,
+        use: 'json-loader',
       },
-    },
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-              loader: "babel-loader"
+      {
+        test: /\.(ts)x?$/,
+        exclude: /node_modules|\.d\.ts$/, // this line as well
+        use: {
+          loader: 'ts-loader',
+          options: {
+            compilerOptions: {
+              noEmit: false, // this option will solve the issue
             },
           },
-         
+        },
+      },
+
+      {
+        test: /\.jsx?$/, // обновляем регулярное выражение для поддержки jsx
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true,
+          },
+        },
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        },
+      },
+
       {
         test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
@@ -57,7 +65,7 @@ module.exports = {
       },
 
     ],
-    
+
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
