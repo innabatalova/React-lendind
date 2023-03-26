@@ -1,16 +1,18 @@
 # React project
 Interface app on React.
+Верстка интерфейса адаптивная на React (функциональные компоненты). Подключен FakeAPI для создания списка друзей.
+Посмотреть сейчас 
 
 # Technologies used
-
 - React
 - TypeScript
 - Scss
 - PostCSS
 - Webpack
+- Axios
+- FakeAPI
 
 # Install and start
-
 "$" npm install 
 
 "$" npm build

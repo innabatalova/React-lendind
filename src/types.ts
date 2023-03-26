@@ -45,6 +45,7 @@ export interface IChatFooterProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export interface IStateProps {
+    role: string | null
     name: string | null,
     avatar: string | null
 }

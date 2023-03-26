@@ -34,33 +34,37 @@ const Nomad: FC<IVisibleProps> = ({ classVisible, clicked }) => {
     const listChannels: JSX.Element[] = channels.map((number) => <>{number}</>);
 
     const friends: JSX.Element[] = [
-        <FriendsItem name='Orlando Diggs' src={AvatarImg1} classFriend="online" />,
-        <FriendsItem name="Carmen Velasco" src={AvatarImg2} classFriend="online" />,
-        <FriendsItem name="Marie Jensen" src={AvatarImg3} />,
-        <FriendsItem name="Alex Lee" src={AvatarImg4} />,
-        <FriendsItem name="Leo Gill" src={AvatarImg5} />,
-        <FriendsItem name="Britney Cooper" src={AvatarImg6} />,
+        <FriendsItem name='Orlando Diggs' src={AvatarImg1} classFriend="customer" />,
+        <FriendsItem name="Carmen Velasco" src={AvatarImg2} classFriend="customer" />,
+        <FriendsItem name="Marie Jensen" src={AvatarImg3} classFriend="admin"/>,
+        <FriendsItem name="Alex Lee" src={AvatarImg4} classFriend="admin"/>,
+        <FriendsItem name="Leo Gill" src={AvatarImg5} classFriend="admin"/>,
+        <FriendsItem name="Britney Cooper" src={AvatarImg6} classFriend="admin"/>,
     ];
 
     const [state, setState] = useState(friends)
 
     const userDataApi = async (): Promise<void> => {
-        let userData = await API.get('/users', {
-            params: {
-                results: 9,
-                inc: 'name, avatar'
-            }
-        })
-        const userApiList = userData.data.map((item: IStateProps) => <FriendsItem name={item.name} src={item.avatar} />);
-        
-        const allFriends = [...friends, ...userApiList]
-        console.log(allFriends);
-        setState(allFriends)
+        try {
+            let userData = await API.get('/users', {
+                params: {
+                    inc: 'name, avatar, role'
+                },
+            })
+            const userApiList = userData.data.map((item: IStateProps) => <FriendsItem name={item.name} src={item.avatar} classFriend={item.role} />);
+            const allFriends = [...friends, ...userApiList]
+            const sortAllFriends = allFriends.sort((a, b) => a.props.classFriend > b.props.classFriend ? -1 : 1)
+            setState(sortAllFriends)
+
+        } catch (err) {
+            console.error(err.toJSON())
+        }
     }
-     
+
+
     useEffect(() => {
         userDataApi()
-      }, []);
+    }, []);
 
     const listFriends: JSX.Element[] = state.map((number) => <>{number}</>)
     const friendsLenght: number = listFriends.length;
