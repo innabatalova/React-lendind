@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { IVisibleProps } from '../types'
 
 import ChatHeader from '../components/ChatHeader/ChatHeader'
@@ -14,7 +14,7 @@ import AvatarImg5 from '../static/img/chat-avatar-5.png'
 
 import ChatPhoto from '../static/img/chat-photo.jpg'
 
-const Chat: FC<IVisibleProps> = ({classVisible, clicked}) => {
+const Chat = ({classVisible, clicked}: IVisibleProps) => {
   return (
     <div className={`chat ` + classVisible} >
       <ChatHeader clicked={clicked}/>

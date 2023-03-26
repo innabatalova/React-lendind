@@ -1,7 +1,7 @@
-import React, { FC } from "react"
+import React from "react"
 import { IChatFooterProps } from '../../types'
 
-const ChatFooter: FC<IChatFooterProps> = ({channelPlaceholder}) => {
+const ChatFooter = ({channelPlaceholder}: IChatFooterProps) => {
 
   return (
     <div className="chat__footer">

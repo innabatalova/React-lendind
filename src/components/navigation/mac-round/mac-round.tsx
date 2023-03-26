@@ -1,8 +1,8 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { IMacRoundProps } from "../../../types"
 
-const MacRoundItem: FC<IMacRoundProps> = ({classRound}) => {
+const MacRoundItem = ({classRound}: IMacRoundProps) => {
     return <div className={classRound + ` mac-round`}></div>;
 }
 

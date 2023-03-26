@@ -1,8 +1,8 @@
-import React, {FC} from 'react'
+import React from 'react'
 
 import { IFriendItemProps } from '../../../types'
 
-const FriendsItem: FC<IFriendItemProps> = ({classFriend, src, name}) => {
+const FriendsItem = ({classFriend, src, name}: IFriendItemProps) => {
     return (
     <div className="frends-item">
       <div className={`frends-item__dot ${classFriend}`}></div>

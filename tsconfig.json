@@ -6,7 +6,7 @@
         "noEmitOnError": true,
         "noUnusedLocals": true,
         "removeComments": true,
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "downlevelIteration": true, 
         "esModuleInterop": true,
         "baseUrl": "./",

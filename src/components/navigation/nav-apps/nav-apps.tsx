@@ -1,12 +1,12 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { INavAppsProps } from "../../../types"
 
-const NavAppsItem:FC<INavAppsProps> = ({src, classNavItem}) => {
+const NavAppsItem = ({src, classNavItem}: INavAppsProps) => {
 
-  function handleClick(e: React.SyntheticEvent<EventTarget>): void { 
+  function handleClick(event: React.MouseEvent<HTMLImageElement>): void { 
           function addActive(){
-            let target = e.target as HTMLInputElement;
+            let target = event.target as HTMLInputElement;
             target.classList.add('active');
           }
           setTimeout(addActive, 0)  

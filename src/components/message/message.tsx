@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import { IMessageProps } from "../../types"
 
-const Message : FC<IMessageProps> = ({src, name, date, text, classText, teg, special, srcImg}) => {
+const Message = ({src, name, date, text, classText, teg, special, srcImg}: IMessageProps) => {
     return (
         <div className="message">
           <img src={src} alt="avatar" className="message__avatar"/>

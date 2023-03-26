@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 import { IChannelItemProps } from '../../../types'
 
-const ChannelItem: FC<IChannelItemProps> = ({value, clicked}) => {
+const ChannelItem = ({value, clicked}: IChannelItemProps) => {
 
   const channelPlaceholder = () => {
     let elem: HTMLInputElement = document.querySelector('.chat__footer__message');

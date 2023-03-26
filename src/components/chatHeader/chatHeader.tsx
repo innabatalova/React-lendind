@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 import { IVisibleProps } from '../../types'
 
 import HeaderStar from '../../static/img/chat-header-star.svg'
@@ -6,7 +6,7 @@ import HeaderUsers from '../../static/img/chat-header-users.svg'
 import HeaderRing from '../../static/img/chat-header-ring.svg'
 import HeaderSearch from '../../static/img/chat-header-search.svg'
 
-const ChatHeader: FC<IVisibleProps> = ({clicked}) => {
+const ChatHeader = ({clicked}: IVisibleProps) => {
     const style = {
       background: 'url(' + HeaderSearch + ') 95% no-repeat',
     }

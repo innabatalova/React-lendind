@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { IVisibleProps, IStateProps } from '../types'
 import API from '../api/usersApi'
 
@@ -15,7 +15,7 @@ import AvatarImg6 from '../static/img/friend-avatar-6.jpg'
 import SettingIcon from '../static/img/setting-icon.svg'
 import ChatIcon from '../static/img/chat-icon.svg'
 
-const Nomad: FC<IVisibleProps> = ({ classVisible, clicked }) => {
+const Nomad = ({ classVisible, clicked }: IVisibleProps) => {
 
     const channels: JSX.Element[] = [
         <ChannelItem value="# general" clicked={clicked} />,

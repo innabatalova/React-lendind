@@ -1,10 +1,10 @@
-import React, { FC, useState } from "react"
+import React, { useState } from "react"
 
 import Nav from "./Nav"
 import Nomad from "./Nomad"
 import Chat from "./Chat"
 
-const Layout: FC = () => {
+const Layout = () => {
     const [ visibleNomad, setVisibleNomad ] = useState('');
     const toggleVisibleNomad = () => {
         setVisibleNomad('hidden')

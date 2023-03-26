@@ -1,9 +1,9 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { IMessageDateProps } from "../../types"
 
 
-const MessageDate : FC<IMessageDateProps> = ({text}) => {
+const MessageDate = ({text}: IMessageDateProps) => {
     return(
        <div className="date">
         <div className="date__line"></div>
