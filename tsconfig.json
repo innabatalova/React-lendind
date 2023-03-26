@@ -5,6 +5,7 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "noUnusedLocals": true,
+        "sourceMap": true,
         "removeComments": true,
         "noImplicitAny": false,
         "downlevelIteration": true, 
