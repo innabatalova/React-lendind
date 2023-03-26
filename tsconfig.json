@@ -8,12 +8,12 @@
         "sourceMap": true,
         "removeComments": true,
         "noImplicitAny": false,
-        "downlevelIteration": true, 
+        "downlevelIteration": true,
+        "forceConsistentCasingInFileNames": true,
         "esModuleInterop": true,
         "baseUrl": "./",
         
     },
-    "exclude": [
-        "node_modules"
-    ]
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
 }
