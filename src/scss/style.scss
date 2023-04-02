@@ -9,14 +9,16 @@
 @import "../blocks/_navigation";
 @import "../blocks/_nomad";
 @import "../blocks/_chat";
+@import "../blocks/_bio";
 
 
-@import "../components/navigation/mac-round/_mac-round";
-@import "../components/navigation/nav-apps/_nav-apps";
-@import "../components/navigation/nav-plus/_nav-plus";
-@import "../components/nomad/channels-item/_channels-item";
-@import "../components/nomad/friends-item/_friends-item";
-@import "../components/chatHeader/_chatHeader";
-@import "../components/message/_message";
-@import "../components/messageDate/_messageDate";
-@import "../components/chatFooter/_chatFooter";
+@import "../components/Navigation/Mac-round/_mac-round";
+@import "../components/Navigation/Nav-apps/_nav-apps";
+@import "../components/Navigation/Nav-plus/_nav-plus";
+@import "../components/nomad/Channels-item/_channels-item";
+@import "../components/nomad/Friends-item/_friends-item";
+@import "../components/ChatHeader/_chatHeader";
+@import "../components/Message/_message";
+@import "../components/MessageDate/_messageDate";
+@import "../components/ChatFooter/_chatFooter";
+@import "../components/BioField/_bioField";

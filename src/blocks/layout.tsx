@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Nav from "./Nav"
 import Nomad from "./Nomad"
 import Chat from "./Chat"
+import Bio from "./Bio"
 
 const Layout = () => {
     const [ visibleNomad, setVisibleNomad ] = useState('');
@@ -23,6 +24,7 @@ const Layout = () => {
         <Nav/>
         <Nomad classVisible = {visibleNomad} clicked = {toggleVisibleNomad}/>
         <Chat classVisible = {visibleChat} clicked = {toggleVisibleChat}/>
+        <Bio/>
         </div>
     );
   }

@@ -47,3 +47,8 @@ export interface IStateProps {
     name: string | null,
     avatar: string | null
 }
+
+export interface IBioFieldProps {
+    title: string | null
+    text: string | null
+}

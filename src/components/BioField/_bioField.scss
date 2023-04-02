@@ -1,0 +1,24 @@
+.biofield {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 2px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #5F6164;
+    }
+
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+}
