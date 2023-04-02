@@ -52,3 +52,7 @@ export interface IBioFieldProps {
     title: string | null
     text: string | null
 }
+
+export interface IBioSocialProps {
+    src: string | null
+}
