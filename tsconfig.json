@@ -1,26 +1,19 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es2017",
         "jsx": "react",
         "module": "commonjs",
+        "moduleResolution": "node",
         "noUnusedLocals": true,
+        "sourceMap": true,
         "removeComments": true,
         "noImplicitAny": false,
-        "downlevelIteration": true, 
+        "downlevelIteration": true,
+        "forceConsistentCasingInFileNames": true,
         "esModuleInterop": true,
+        "strictNullChecks": false,
         "baseUrl": "./",
-        "paths": { // Указываем ссылки до директорий в проекте, чтобы каждый раз в импортах не писать относительные пути
-            "app": ["src/components"],
-            "blocks/*": ["src/blocks/*"],
-        },
-        "lib": [
-            "dom",
-            "dom.iterable",
-            "esnext"
-        ],
         
     },
-    "exclude": [
-        "node_modules"
-    ]
+    "exclude": ["node_modules"]
 }
