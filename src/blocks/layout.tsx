@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import Nav from "./Nav"
-import Nomad from "./Nomad"
+import Nomad from "./nomad"
 import Chat from "./Chat"
 import Bio from "./Bio"
 

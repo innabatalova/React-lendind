@@ -1,0 +1,12 @@
+.biobutton{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 10px;
+    height: 16px;
+    background-image: url('http://localhost:3000/img/bio-arrow.svg');
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IBioFieldProps } from "../../types"
+import { IBioFieldProps } from "../../../types"
 
 const BioField = ({title, text}: IBioFieldProps) => {
   return (
