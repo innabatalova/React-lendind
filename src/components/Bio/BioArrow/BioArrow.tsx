@@ -1,16 +1,16 @@
 import React from 'react';
 
-const BioButton = () => {
+const BioArrow = () => {
 
   const handleClick = () => {
     console.log('test!');
-    
   }
+
   return (
-    <button className='biobutton' onClick={handleClick}>
+    <button className='bio-arrow' onClick={handleClick}>
     </button>
   );
 
 }
 
-export default BioButton;
+export default BioArrow;

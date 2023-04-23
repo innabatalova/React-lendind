@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import Nav from "./Nav"
-import Nomad from "./nomad"
+import NomadBlock from "./NomadBlock"
 import Chat from "./Chat"
 import Bio from "./Bio"
 
@@ -22,7 +22,7 @@ const Layout = () => {
     return (
         <div className='layout' >
         <Nav/>
-        <Nomad classVisible = {visibleNomad} clicked = {toggleVisibleNomad}/>
+        <NomadBlock classVisible = {visibleNomad} clicked = {toggleVisibleNomad}/>
         <Chat classVisible = {visibleChat} clicked = {toggleVisibleChat}/>
         <Bio/>
         </div>

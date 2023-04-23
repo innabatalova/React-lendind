@@ -2,22 +2,41 @@ import React from 'react';
 
 import BioSocial from "../components/Bio/BioSocial/BioSocial"
 import BioField from "../components/Bio/BioField/BioField"
-import BioButton from "../components/Bio/BioButton/BioButton"
+import BioArrow from "../components/Bio/BioArrow/BioArrow"
+
+import PhotoMain from "../static/img/profile-main-photo.jpg"
+
+import IconFacebook from "../static/img/bio-icon-facebook.svg"
+import IconTwitter from "../static/img/bio-icon-twitter.svg"
+import IconInstagram from "../static/img/bio-icon-instagram.svg"
+import IconIn from "../static/img/bio-icon-in.svg"
 
 const Bio = () => {
   return (
     <div className="bio">
-       <div className="bio-social-wrapper">
-        <BioSocial src="http://localhost:3000/img/bio-icon-facebook.svg"/>
-        <BioSocial src="http://localhost:3000/img/bio-icon-twitter.svg"/>
-        <BioSocial src="http://localhost:3000/img/bio-icon-instagram.svg"/>
-        <BioSocial src="http://localhost:3000/img/bio-icon-in.svg"/>
-       </div>
-       <BioField title="Username" text="@amilia_lu"/>
-       <BioField title="Email" text="a-luna@gmail.com"/>
-       <BioField title="Skype" text="amiluna"/>
-       <BioField title="Timezone" text="2:21 PM Local time"/>
-       <BioButton/>
+      <img src={PhotoMain} className="bio-main" alt="photo profile" />
+      <div className="bio-wrapper">
+        <div className="bio-name">
+          <h3 className="bio__name">Amilia Luna</h3>
+          <div className='frends-item__dot customer'></div>
+        </div>
+        <span className="bio__staff">UI Designer</span>
+        <div className="bio-social-wrapper">
+          <BioSocial src={IconFacebook} />
+          <BioSocial src={IconTwitter} />
+          <BioSocial src={IconInstagram} />
+          <BioSocial src={IconIn} />
+        </div>
+        <div className="bio-button">
+          <button className="bio-button__message">Message</button>
+          <div className="bio-button__list"></div>
+        </div>
+        <BioField title="Username" text="@amilia_lu" />
+        <BioField title="Email" text="a-luna@gmail.com" />
+        <BioField title="Skype" text="amiluna" />
+        <BioField title="Timezone" text="2:21 PM Local time" />
+      </div>
+      <BioArrow />
     </div>
   );
 

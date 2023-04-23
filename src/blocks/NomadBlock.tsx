@@ -15,7 +15,7 @@ import AvatarImg6 from '../static/img/friend-avatar-6.jpg'
 import SettingIcon from '../static/img/setting-icon.svg'
 import ChatIcon from '../static/img/chat-icon.svg'
 
-const Nomad = ({ classVisible, clicked }: IVisibleProps) => {
+const NomadBlock = ({ classVisible, clicked }: IVisibleProps) => {
 
     const channels: JSX.Element[] = [
         <ChannelItem value="# general" clicked={clicked} />,
@@ -107,4 +107,4 @@ const Nomad = ({ classVisible, clicked }: IVisibleProps) => {
 }
 
 
-export default Nomad;
+export default NomadBlock;

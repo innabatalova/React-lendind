@@ -1,17 +1,93 @@
-.bio{
+.bio {
     position: relative;
     min-width: 210px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.2);
 
-    &-social{
+    &-wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
 
-        &-wrapper{
+    &-main {
+        width: 100%;
+    }
+
+    &-name {
+        display: flex;
+        width: 110px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__name {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__staff {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #5F6164;
+    }
+
+    &-button {
+        display: flex;
+
+        &__message {
+            width: 135px;
+            height: 25px;
+            background-color: #3577EF;
+            color: #ffffff;
+            outline: none;
+            border: none;
+            margin-right: 5px;
+            border-radius: 5px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1455ce;
+            }
+        }
+
+
+        &__list {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            background-color: #3577EF;
+            background-image: url('http://localhost:3000/img/bio-message-list.svg');
+            background-repeat: no-repeat;
+            background-position: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1455ce;
+            }
+        }
+    }
+
+    &-social {
+
+        &-wrapper {
             width: 110px;
             display: flex;
             justify-content: space-between;
+            margin: 20px 0;
         }
     }
 }
