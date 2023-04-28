@@ -1,10 +1,10 @@
 import React from 'react';
 import { IVisibleProps } from '../types'
 
-import ChatHeader from '../components/ChatHeader/ChatHeader'
-import Message from '../components/Message/Message'
+import ChatHeader from '../components/chatHeader/chatHeader'
+import Message from '../components/message/message'
 import MessageDate from '../components/MessageDate/MessageDate'
-import ChatFooter from '../components/ChatFooter/ChatFooter'
+import ChatFooter from '../components/chatFooter/chatFooter'
 
 import AvatarImg1 from '../static/img/chat-avatar-1.jpg'
 import AvatarImg2 from '../static/img/chat-avatar-2.png'

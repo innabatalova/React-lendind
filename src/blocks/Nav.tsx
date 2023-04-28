@@ -1,8 +1,8 @@
 import React from "react"
 
-import MacRoundItem from '../components/Navigation/Mac-round/Mac-round'
-import NavAppsItem from '../components/Navigation/Nav-apps/Nav-apps'
-import NavPlus from '../components/Navigation/Nav-plus/Nav-plus'
+import MacRoundItem from '../components/navigation/mac-round/mac-round'
+import NavAppsItem from '../components/navigation/nav-apps/nav-apps'
+import NavPlus from '../components/navigation/nav-plus/nav-plus'
 
 import NavImg1 from '../static/img/nav-item-1.svg'
 import NavImg2 from '../static/img/nav-item-2.svg'

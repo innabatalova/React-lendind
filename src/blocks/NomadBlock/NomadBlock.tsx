@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react"
-import { IVisibleProps, IStateProps } from '../types'
-import API from '../api/usersApi'
+import { IVisibleProps, IStateProps } from '../../types'
+import API from '../../api/usersApi'
 
-import ChannelItem from '../components/nomad/Channels-item/ChannelItem'
-import FriendsItem from '../components/nomad/Friends-item/FriendsItem'
+import ChannelItem from '../../components/nomad/channels-item/ChannelItem'
+import FriendsItem from '../../components/nomad/friends-item/FriendsItem'
 
-import AvatarImg1 from '../static/img/friend-avatar-1.jpg'
-import AvatarImg2 from '../static/img/friend-avatar-2.jpg'
-import AvatarImg3 from '../static/img/friend-avatar-3.jpg'
-import AvatarImg4 from '../static/img/friend-avatar-4.jpg'
-import AvatarImg5 from '../static/img/friend-avatar-5.jpg'
-import AvatarImg6 from '../static/img/friend-avatar-6.jpg'
+import AvatarImg1 from '../../static/img/friend-avatar-1.jpg'
+import AvatarImg2 from '../../static/img/friend-avatar-2.jpg'
+import AvatarImg3 from '../../static/img/friend-avatar-3.jpg'
+import AvatarImg4 from '../../static/img/friend-avatar-4.jpg'
+import AvatarImg5 from '../../static/img/friend-avatar-5.jpg'
+import AvatarImg6 from '../../static/img/friend-avatar-6.jpg'
 
-import SettingIcon from '../static/img/setting-icon.svg'
-import ChatIcon from '../static/img/chat-icon.svg'
+import SettingIcon from '../../static/img/setting-icon.svg'
+import ChatIcon from '../../static/img/chat-icon.svg'
 
 const NomadBlock = ({ classVisible, clicked }: IVisibleProps) => {
 

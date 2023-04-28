@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 
 import Nav from "./Nav"
-import NomadBlock from "./NomadBlock"
-import Chat from "./Chat"
+import NomadBlock from "./NomadBlock/NomadBlock"
+import Chat from "./chat"
 import Bio from "./Bio"
 
 const Layout = () => {
