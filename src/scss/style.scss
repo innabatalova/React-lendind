@@ -4,23 +4,23 @@
 @import "./_setting";
 @import "./_context";
 
-@import "../blocks/_layout";
+@import "../blocks/LayoutBlock/_layout";
 
-@import "../blocks/_navigation";
+@import "../blocks/NavigationBlock/_navigation";
 @import "../blocks/NomadBlock/_nomadBlock";
-@import "../blocks/_chat";
-@import "../blocks/_bio";
+@import "../blocks/ChatBlock/_chat";
+@import "../blocks/BioBlock/_bio";
 
 
-@import "../components/Navigation/Mac-round/_mac-round";
-@import "../components/Navigation/Nav-apps/_nav-apps";
-@import "../components/Navigation/Nav-plus/_nav-plus";
-@import "../components/nomad/Channels-item/_channels-item";
-@import "../components/nomad/Friends-item/_friends-item";
+@import "../components/NavigationComponents/MacRound/_mac-round";
+@import "../components/NavigationComponents/NavApps/_nav-apps";
+@import "../components/NavigationComponents/NavPlus/_nav-plus";
+@import "../components/NomadComponents/ChannelsItem/_channels-item";
+@import "../components/NomadComponents/FriendsItem/_friends-item";
 @import "../components/ChatHeader/_chatHeader";
 @import "../components/Message/_message";
 @import "../components/MessageDate/_messageDate";
 @import "../components/ChatFooter/_chatFooter";
-@import "../components/Bio/BioField/_bioField";
-@import "../components/Bio/BioArrow/_bioArrow";
-@import "../components/Bio/BioSocial/_bioSocial";
+@import "../components/BioComponents/BioField/_bioField";
+@import "../components/BioComponents/BioArrow/_bioArrow";
+@import "../components/BioComponents/BioSocial/_bioSocial";

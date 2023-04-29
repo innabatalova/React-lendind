@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react"
 import { IVisibleProps, IStateProps } from '../../types'
 import API from '../../api/usersApi'
 
-import ChannelItem from '../../components/nomad/channels-item/ChannelItem'
-import FriendsItem from '../../components/nomad/friends-item/FriendsItem'
+import ChannelItem from '../../components/NomadComponents/ChannelsItem/ChannelItem'
+import FriendsItem from '../../components/NomadComponents/FriendsItem/FriendsItem'
 
 import AvatarImg1 from '../../static/img/friend-avatar-1.jpg'
 import AvatarImg2 from '../../static/img/friend-avatar-2.jpg'

@@ -1,9 +1,11 @@
 import React from 'react';
 
+import BioArrowImg from '../../../static/img/bio-arrow.svg';
+
 const BioArrow = () => {
 
   const handleClick = () => {
-    console.log('test!');
+    console.log(BioArrowImg);
   }
 
   return (

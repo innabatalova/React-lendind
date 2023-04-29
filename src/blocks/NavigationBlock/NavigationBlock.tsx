@@ -1,19 +1,19 @@
 import React from "react"
 
-import MacRoundItem from '../components/navigation/mac-round/mac-round'
-import NavAppsItem from '../components/navigation/nav-apps/nav-apps'
-import NavPlus from '../components/navigation/nav-plus/nav-plus'
+import MacRoundItem from '../../components/NavigationComponents/MacRound/MacRound'
+import NavAppsItem from '../../components/NavigationComponents/NavApps/NavApps'
+import NavPlus from '../../components/NavigationComponents/NavPlus/NavPlus'
 
-import NavImg1 from '../static/img/nav-item-1.svg'
-import NavImg2 from '../static/img/nav-item-2.svg'
-import NavImg3 from '../static/img/nav-item-3.svg'
-import NavImg4 from '../static/img/nav-item-4.svg'
-import NavImg5 from '../static/img/nav-item-5.svg'
-import NavImg6 from '../static/img/nav-item-6.svg'
-import NavImg7 from '../static/img/nav-item-7.svg'
+import NavImg1 from '../../static/img/nav-item-1.svg'
+import NavImg2 from '../../static/img/nav-item-2.svg'
+import NavImg3 from '../../static/img/nav-item-3.svg'
+import NavImg4 from '../../static/img/nav-item-4.svg'
+import NavImg5 from '../../static/img/nav-item-5.svg'
+import NavImg6 from '../../static/img/nav-item-6.svg'
+import NavImg7 from '../../static/img/nav-item-7.svg'
 
 
-const Nav = () => {
+const NavigationBlock = () => {
 
    function handleClickWrap(): void {
           const arrIcons = document.querySelectorAll(".nav-apps__item")
@@ -48,4 +48,4 @@ const Nav = () => {
   }
 
 
-  export default Nav;
+  export default NavigationBlock;

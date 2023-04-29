@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 
-import Nav from "./Nav"
-import NomadBlock from "./NomadBlock/NomadBlock"
-import Chat from "./chat"
-import Bio from "./Bio"
+import NavigationBlock from "../NavigationBlock/NavigationBlock"
+import NomadBlock from "../NomadBlock/NomadBlock"
+import ChatBlock from "../ChatBlock/ChatBlock"
+import BioBlock from "../BioBlock/BioBlock"
 
-const Layout = () => {
+const LayoutBlock = () => {
     const [ visibleNomad, setVisibleNomad ] = useState('');
     const toggleVisibleNomad = () => {
         setVisibleNomad('hidden')
@@ -21,12 +21,12 @@ const Layout = () => {
 
     return (
         <div className='layout' >
-        <Nav/>
+        <NavigationBlock/>
         <NomadBlock classVisible = {visibleNomad} clicked = {toggleVisibleNomad}/>
-        <Chat classVisible = {visibleChat} clicked = {toggleVisibleChat}/>
-        <Bio/>
+        <ChatBlock classVisible = {visibleChat} clicked = {toggleVisibleChat}/>
+        <BioBlock/>
         </div>
     );
   }
 
-  export default Layout;
+  export default LayoutBlock;

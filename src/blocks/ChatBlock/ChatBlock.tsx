@@ -1,20 +1,20 @@
 import React from 'react';
-import { IVisibleProps } from '../types'
+import { IVisibleProps } from '../../types'
 
-import ChatHeader from '../components/chatHeader/chatHeader'
-import Message from '../components/message/message'
-import MessageDate from '../components/MessageDate/MessageDate'
-import ChatFooter from '../components/chatFooter/chatFooter'
+import ChatHeader from '../../components/ChatHeader/ChatHeader'
+import Message from '../../components/Message/Message'
+import MessageDate from '../../components/MessageDate/MessageDate'
+import ChatFooter from '../../components/ChatFooter/ChatFooter'
 
-import AvatarImg1 from '../static/img/chat-avatar-1.jpg'
-import AvatarImg2 from '../static/img/chat-avatar-2.png'
-import AvatarImg3 from '../static/img/chat-avatar-3.png'
-import AvatarImg4 from '../static/img/chat-avatar-4.png'
-import AvatarImg5 from '../static/img/chat-avatar-5.png'
+import AvatarImg1 from '../../static/img/chat-avatar-1.jpg'
+import AvatarImg2 from '../../static/img/chat-avatar-2.png'
+import AvatarImg3 from '../../static/img/chat-avatar-3.png'
+import AvatarImg4 from '../../static/img/chat-avatar-4.png'
+import AvatarImg5 from '../../static/img/chat-avatar-5.png'
 
-import ChatPhoto from '../static/img/chat-photo.jpg'
+import ChatPhoto from '../../static/img/chat-photo.jpg'
 
-const Chat = ({classVisible, clicked}: IVisibleProps) => {
+const ChatBlock = ({classVisible, clicked}: IVisibleProps) => {
   return (
     <div className={`chat ` + classVisible} >
       <ChatHeader clicked={clicked}/>
@@ -42,4 +42,4 @@ const Chat = ({classVisible, clicked}: IVisibleProps) => {
 
 }
 
-export default Chat;
+export default ChatBlock;

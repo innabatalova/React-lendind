@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom'
 
 import "./scss/style.scss"
 
-import Layout from "./blocks/layout"
+import LayoutBlock from "./blocks/LayoutBlock/LayoutBlock"
 
-ReactDOM.render(<Layout/>, document.getElementById('root'))
+ReactDOM.render(<LayoutBlock/>, document.getElementById('root'))

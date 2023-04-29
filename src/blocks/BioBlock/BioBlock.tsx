@@ -1,17 +1,17 @@
 import React from 'react';
 
-import BioSocial from "../components/Bio/BioSocial/BioSocial"
-import BioField from "../components/Bio/BioField/BioField"
-import BioArrow from "../components/Bio/BioArrow/BioArrow"
+import BioSocial from "../../components/BioComponents/BioSocial/BioSocial"
+import BioField from "../../components/BioComponents/BioField/BioField"
+import BioArrow from "../../components/BioComponents/BioArrow/BioArrow"
 
-import PhotoMain from "../static/img/profile-main-photo.jpg"
+import PhotoMain from "../../static/img/profile-main-photo.jpg"
 
-import IconFacebook from "../static/img/bio-icon-facebook.svg"
-import IconTwitter from "../static/img/bio-icon-twitter.svg"
-import IconInstagram from "../static/img/bio-icon-instagram.svg"
-import IconIn from "../static/img/bio-icon-in.svg"
+import IconFacebook from "../../static/img/bio-icon-facebook.svg"
+import IconTwitter from "../../static/img/bio-icon-twitter.svg"
+import IconInstagram from "../../static/img/bio-icon-instagram.svg"
+import IconIn from "../../static/img/bio-icon-in.svg"
 
-const Bio = () => {
+const BioBlock = () => {
   return (
     <div className="bio">
       <img src={PhotoMain} className="bio-main" alt="photo profile" />
@@ -42,4 +42,4 @@ const Bio = () => {
 
 }
 
-export default Bio;
+export default BioBlock;
