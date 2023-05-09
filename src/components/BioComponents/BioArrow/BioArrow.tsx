@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const BioArrow = () => {
-  const [close, setClose] = useState('');
-  const [BioArrowClose, setBioArrowClose] = useState('');
+import { IArrowRotateProps } from '../../../types'
 
-  const handleClick = () => {
-  }
+const BioArrow = ({classArrowRotate}: IArrowRotateProps) => {
 
   return (
-    <button className='bio-arrow' onClick={handleClick}>
+    <button className={`bio-arrow ` + classArrowRotate} >
     </button>
   );
 

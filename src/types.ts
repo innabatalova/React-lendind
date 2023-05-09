@@ -35,7 +35,8 @@ export interface IFriendItemProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export interface IVisibleProps extends React.HTMLAttributes<HTMLDivElement> {
     classVisible?: string;
-    clicked?: () => void
+    clicked?: () => void;
+    classArrowRotate?: string;
 }
 
 export interface IChatFooterProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -56,3 +57,9 @@ export interface IBioFieldProps {
 export interface IBioSocialProps {
     src: string | undefined
 }
+
+export interface IArrowRotateProps {
+    classArrowRotate?: string;
+}
+
+

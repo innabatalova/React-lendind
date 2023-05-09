@@ -19,8 +19,10 @@ const LayoutBlock = () => {
     }
 
     const [ visibleBio, setVisibleBio ] = useState('');
+    const [ arrowRotate, setArrowRotate ] = useState('');
     const toggleVisibleBio = () => {
-        visibleBio =='bioclose' ? setVisibleBio('') : setVisibleBio('bioclose')  
+        visibleBio =='bioclose' ? setVisibleBio('') : setVisibleBio('bioclose')
+        arrowRotate =='close' ? setArrowRotate('') : setArrowRotate('close')
     }
 
     return (
@@ -28,7 +30,9 @@ const LayoutBlock = () => {
         <NavigationBlock/>
         <NomadBlock classVisible = {visibleNomad} clicked = {toggleVisibleNomad}/>
         <ChatBlock classVisible = {visibleChat} clicked = {toggleVisibleChat}/>
-        <BioBlock classVisible = {visibleBio} clicked = {toggleVisibleBio}/>
+        <BioBlock classVisible = {visibleBio} 
+                  clicked = {toggleVisibleBio} 
+                  classArrowRotate = {arrowRotate} />
         </div>
     );
   }
