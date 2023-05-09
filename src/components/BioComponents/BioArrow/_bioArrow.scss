@@ -15,4 +15,9 @@
 .close {
     left: 1px;
     transform: rotate(180deg);
+
+    &_close{
+        left: 0;
+        transform: rotate(180deg);
+    }
 }
