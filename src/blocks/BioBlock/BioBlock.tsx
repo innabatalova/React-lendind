@@ -1,4 +1,5 @@
 import React from 'react';
+import { IVisibleProps } from '../../types'
 
 import BioSocial from "../../components/BioComponents/BioSocial/BioSocial"
 import BioField from "../../components/BioComponents/BioField/BioField"
@@ -11,9 +12,10 @@ import IconTwitter from "../../static/img/bio-icon-twitter.svg"
 import IconInstagram from "../../static/img/bio-icon-instagram.svg"
 import IconIn from "../../static/img/bio-icon-in.svg"
 
-const BioBlock = () => {
+const BioBlock = ({classVisible, clicked}: IVisibleProps) => {
+  
   return (
-    <div className="bio">
+    <div className={`bio ` + classVisible} onClick={clicked}>
       <img src={PhotoMain} className="bio-main" alt="photo profile" />
       <div className="bio-wrapper">
         <div className="bio-name">

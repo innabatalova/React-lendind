@@ -75,7 +75,7 @@ const NomadBlock = ({ classVisible, clicked }: IVisibleProps) => {
             <div className="container">
                 <div className="nomad-title-wrap">
                     <h2 className="nomad__title">Nomad List</h2>
-                    <img src={SettingIcon} alt="setting icon" className='nomad__setting__icon' />
+                    <img src={SettingIcon} alt="setting icon" className='nomad__setting__icon'/>
                 </div>
 
                 <div className="nomad-treads-wrap">

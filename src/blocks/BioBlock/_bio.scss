@@ -1,7 +1,8 @@
 .bio {
     position: relative;
     min-width: 210px;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    background-color: #cccccc;
 
     &-wrapper {
         padding-right: 20px;
@@ -89,5 +90,18 @@
             justify-content: space-between;
             margin: 20px 0;
         }
+    }
+
+}
+
+.bioclose {
+    position: absolute;
+    right: -190px !important;
+}
+
+@media screen and (max-width: 1080px) {
+    .bio {
+        position: absolute;
+        right: 0;
     }
 }

@@ -1,15 +1,15 @@
-import React from 'react';
-
-import BioArrowImg from '../../../static/img/bio-arrow.svg';
+import React, { useState } from 'react';
 
 const BioArrow = () => {
 
-  const handleClick = () => {
-    console.log(BioArrowImg);
+  const [ BioArrow, setBioArrow ] = useState('');
+
+  const toggleBioArrow = () => {
+    BioArrow =='close' ? setBioArrow('') : setBioArrow('close')
   }
 
   return (
-    <button className='bio-arrow' onClick={handleClick}>
+    <button className={`bio-arrow ` + BioArrow} onClick={toggleBioArrow}>
     </button>
   );
 

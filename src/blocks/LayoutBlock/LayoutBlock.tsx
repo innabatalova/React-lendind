@@ -10,13 +10,17 @@ const LayoutBlock = () => {
     const toggleVisibleNomad = () => {
         setVisibleNomad('hidden')
         setVisibleChat('visible')
-
     }
+
     const [ visibleChat, setVisibleChat ] = useState('');
     const toggleVisibleChat = () => {
             setVisibleNomad('visible')
-            setVisibleChat('hidden')
-            
+            setVisibleChat('hidden')     
+    }
+
+    const [ visibleBio, setVisibleBio ] = useState('');
+    const toggleVisibleBio = () => {
+        visibleBio =='bioclose' ? setVisibleBio('') : setVisibleBio('bioclose')  
     }
 
     return (
@@ -24,7 +28,7 @@ const LayoutBlock = () => {
         <NavigationBlock/>
         <NomadBlock classVisible = {visibleNomad} clicked = {toggleVisibleNomad}/>
         <ChatBlock classVisible = {visibleChat} clicked = {toggleVisibleChat}/>
-        <BioBlock/>
+        <BioBlock classVisible = {visibleBio} clicked = {toggleVisibleBio}/>
         </div>
     );
   }
