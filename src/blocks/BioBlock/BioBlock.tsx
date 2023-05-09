@@ -13,6 +13,7 @@ import IconInstagram from "../../static/img/bio-icon-instagram.svg"
 import IconIn from "../../static/img/bio-icon-in.svg"
 
 const BioBlock = ({ classVisible, clicked }: IVisibleProps) => {  
+  
   return (
     <div className={`bio ` + classVisible} onClick={clicked}>
       <img src={PhotoMain} className="bio-main" alt="photo profile" />

@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
 const BioArrow = () => {
+  const [close, setClose] = useState('');
+  const [BioArrowClose, setBioArrowClose] = useState('');
 
-  const [ BioArrow, setBioArrow ] = useState('');
-
-  const toggleBioArrow = () => {
-    BioArrow =='close' ? setBioArrow('') : setBioArrow('close')
+  const handleClick = () => {
   }
 
   return (
-    <button className={`bio-arrow ` + BioArrow} onClick={toggleBioArrow}>
+    <button className='bio-arrow' onClick={handleClick}>
     </button>
   );
 
