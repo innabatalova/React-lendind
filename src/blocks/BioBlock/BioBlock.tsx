@@ -11,7 +11,11 @@ import IconTwitter from "../../static/img/bio-icon-twitter.svg"
 import IconInstagram from "../../static/img/bio-icon-instagram.svg"
 import IconIn from "../../static/img/bio-icon-in.svg"
 
+import BioMessageList from "../../static/img/bio-message-list.svg"
+
 const BioBlock = () => {
+  console.log(BioMessageList);
+  
   return (
     <div className="bio">
       <img src={PhotoMain} className="bio-main" alt="photo profile" />
