@@ -13,7 +13,7 @@ const NavAppsItem = ({src, classNavItem}: INavAppsProps) => {
         };
 
   return(
-  <img src={src} className={classNavItem + ` nav-apps__item`} onClick={handleClick}/>
+    <img src={src} className={classNavItem + ` nav-apps__item`} onClick={handleClick}/>
     )
 
 }

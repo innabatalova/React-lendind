@@ -15,37 +15,38 @@ import NavImg7 from '../../static/img/nav-item-7.svg'
 
 const NavigationBlock = () => {
 
-   function handleClickWrap(): void {
-          const arrIcons = document.querySelectorAll(".nav-apps__item")
-          arrIcons.forEach(function(item: HTMLImageElement){
-          item.classList.remove('active');
-          })        
-        };
+  const navItems: JSX.Element[] = [
+    <NavAppsItem src={NavImg1} classNavItem="active" />,
+    <NavAppsItem src={NavImg2} />,
+    <NavAppsItem src={NavImg3} />,
+    <NavAppsItem src={NavImg4} />,
+    <NavAppsItem src={NavImg5} />,
+    <NavAppsItem src={NavImg6} />,
+    <NavAppsItem src={NavImg7} />]
 
-    return (
+  function handleClickWrap(): void {
+    const arrIcons = document.querySelectorAll(".nav-apps__item")
+    arrIcons.forEach(function (item: HTMLImageElement) {
+      item.classList.remove('active');
+    })
+  };
+
+  return (
     <div className="navigation">
       <div className="mac-round__wrapper">
-        <MacRoundItem classRound="mac-round_red"/>
-        <MacRoundItem classRound="mac-round_yellow"/>
-        <MacRoundItem classRound="mac-round_green"/>
+        <MacRoundItem classRound="mac-round_red" />
+        <MacRoundItem classRound="mac-round_yellow" />
+        <MacRoundItem classRound="mac-round_green" />
       </div >
 
-      <div className="nav-apps__wrapper" onClick={handleClickWrap}>
-      <NavAppsItem src={NavImg1} classNavItem="active"/>
-      <NavAppsItem src={NavImg2}/>
-      <NavAppsItem src={NavImg3}/>
-      <NavAppsItem src={NavImg4}/>
-      <NavAppsItem src={NavImg5}/>
-      <NavAppsItem src={NavImg6}/>
-      <NavAppsItem src={NavImg7}/>
-      </div >
+      <div className="nav-apps__wrapper" onClick={handleClickWrap}>{navItems}</div >
 
-      <NavPlus/>
+      <NavPlus />
     </div>
-   
-
-    );
-  }
 
 
-  export default NavigationBlock;
+  );
+}
+
+
+export default NavigationBlock;

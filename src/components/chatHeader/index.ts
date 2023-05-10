@@ -1,2 +1,2 @@
 
-export { default } from './ChatHeader';
+export { default } from './ChatHeaderBlock';

@@ -39,10 +39,6 @@ export interface IVisibleProps extends React.HTMLAttributes<HTMLDivElement> {
     classArrowRotate?: string;
 }
 
-export interface IChatFooterProps extends React.HTMLAttributes<HTMLDivElement> {
-    channelPlaceholder: string;
-}
-
 export interface IStateProps {
     role: string | null
     name: string | null,
