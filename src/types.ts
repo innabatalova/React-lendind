@@ -39,6 +39,7 @@ export interface IVisibleProps extends React.HTMLAttributes<HTMLDivElement> {
     classArrowRotate?: string;
 }
 
+
 export interface IStateProps {
     role: string | null
     name: string | null,

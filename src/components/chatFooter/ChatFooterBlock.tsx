@@ -3,11 +3,12 @@ import PlaceHolderContext from '../../context'
 
 const ChatFooter = () => {
 
-  const setNewPlaceHolder = useContext(PlaceHolderContext)
+  const [context, setContext] = useContext(PlaceHolderContext)
+  console.log(setContext);
   
   return (
     <div className="chat__footer">
-      <input type="text" className="chat__footer__message" placeholder={`Message in ` + setNewPlaceHolder()}/>
+      <input type="text" className="chat__footer__message" placeholder={`Message in ` + context}/>
     </div>
   );
 }

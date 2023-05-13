@@ -1,2 +1,2 @@
 
-export { default } from './Message';
+export { default } from './MessageBlock';

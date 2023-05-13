@@ -2,7 +2,7 @@ import React from 'react';
 import { IVisibleProps } from '../../types'
 
 import ChatHeader from '../../components/ChatHeader/ChatHeaderBlock'
-import Message from '../../components/Message/Message'
+import Message from '../../components/Message/MessageBlock'
 import MessageDate from '../../components/MessageDate/MessageDate'
 import ChatFooter from '../../components/ChatFooter/ChatFooterBlock'
 
@@ -36,7 +36,7 @@ const ChatBlock = ({classVisible, clicked}: IVisibleProps) => {
           <Message src={AvatarImg4} name="Nala Nester" date="11:54 AM" text='Working from a van in Australia isn’t feasible if you need internet. It may have improved over the last years but I spent some time in a camper van around Tasmania and internet was a real problem (and Tasmania is tiny compared to the rest of the country).'/>
           <Message src={AvatarImg5} name="Ramon Bateman" date="11:59 AM" teg='@aa_da ' text="What's the reason for the van? Saving money or just like to get outside? If you've got a stable source of income you could always do some short term Airbnbs + buy a truck/topper, build a platform in the back. That way you can always convert it back to a truck and sleep in an apartment if you want."/>
         </div>
-      <ChatFooter/>
+      <ChatFooter />
     </div>
   );
 

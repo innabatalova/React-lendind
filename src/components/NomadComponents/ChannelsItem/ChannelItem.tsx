@@ -5,19 +5,16 @@ import { IChannelItemProps } from '../../../types'
 
 const ChannelItem = ({ value, clicked }: IChannelItemProps) => {
 
-  const { newPlaceHolder, setNewPlaceHolder } = useContext(value)
+  const [context, setContext] = useContext(PlaceHolderContext);
 
   const channelPlaceholder = () => {
-    // let elem: HTMLInputElement = document.querySelector('.chat__footer__message');
-    // (elem as HTMLInputElement ).placeholder = `Message in ` + value;
-    setNewPlaceHolder(value)
-    console.log(newPlaceHolder);
+    setContext(value)
   }
 
   return (
-    <PlaceHolderContext.Provider value={{newPlaceHolder, setNewPlaceHolder}}>
-      <div className="channels-item" onClick={() => { clicked(); channelPlaceholder() }}>{value}</div>
-    </PlaceHolderContext.Provider >
+    <PlaceHolderContext.Provider value={[context, setContext]}>
+      <div className="channels-item" onClick={() => { clicked(); channelPlaceholder()}}>{value}</div>
+    </PlaceHolderContext.Provider>
   );
 }
 
