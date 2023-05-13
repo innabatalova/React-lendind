@@ -27,6 +27,20 @@ https://profound-marzipan-6806f3.netlify.app/
 
 # Working components
 - Стрелка сокрытия/открытия профиля
-- 
+ ![image](https://github.com/innabatalova/React-lendind/assets/79709718/5562d093-b410-4499-8cd7-e086595c255a)
+
+- Клик на выбор тега - проброс тега в поле сообщения
+ ![image](https://github.com/innabatalova/React-lendind/assets/79709718/4695f14a-145c-4db8-ba2b-e93fbd23b412)
+
+- Переключение подсветки иконок
+ ![image](https://github.com/innabatalova/React-lendind/assets/79709718/ae87f5f3-c32b-4af0-b074-7824e9ad28de)
+
+- На размере экрана менее 700px переход в меню и обратно по клику на тег
+ ![image](https://github.com/innabatalova/React-lendind/assets/79709718/7e5faefe-4b8c-408f-bf12-0bfe6b371a7a)
+ ![image](https://github.com/innabatalova/React-lendind/assets/79709718/0b1a84b5-60d6-4c28-9239-7ff9b312bca2)
+
+
+
+
 
 
