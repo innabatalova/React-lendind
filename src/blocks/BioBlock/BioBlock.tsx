@@ -12,7 +12,11 @@ import IconTwitter from "../../static/img/bio-icon-twitter.svg"
 import IconInstagram from "../../static/img/bio-icon-instagram.svg"
 import IconIn from "../../static/img/bio-icon-in.svg"
 
-const BioBlock = ({ classVisible, clicked, classArrowRotate }: IVisibleProps) => {  
+import BioArrowImg from "../../static/img/bio-message-list.svg"
+
+const BioBlock = ({ classVisible, clicked, classArrowRotate }: IVisibleProps) => {
+  
+  console.log(BioArrowImg);
 
   return (
     <div className={`bio ` + classVisible} onClick={clicked}>
