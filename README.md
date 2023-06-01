@@ -1,7 +1,7 @@
 # React project
 Interface app on React.
 Верстка интерфейса адаптивная на React (функциональные компоненты). Подключен FakeAPI для создания списка друзей.
-Посмотреть сейчас https://nimble-praline-16064f.netlify.app/
+Посмотреть сейчас https://resplendent-muffin-9d5a1f.netlify.app/
 
 # Technologies used
 - React
@@ -23,7 +23,7 @@ Interface app on React.
 https://www.figma.com/file/SczQd9Jl1bG3CHCgxCGW7V/Chat-Desktop-App-macOS-(Copy)?node-id=0%3A2
 
 # Link to deploy
-https://nimble-praline-16064f.netlify.app/
+https://resplendent-muffin-9d5a1f.netlify.app/
 
 # Working components
 - Стрелка сокрытия/открытия профиля
