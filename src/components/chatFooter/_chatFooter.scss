@@ -1,12 +1,12 @@
-$FooterFile: url('http://localhost:3000/img/chat-footer-file.svg');
-$FooterVoice: url('http://localhost:3000/img/chat-footer-voice.svg');
-$FooterSmile: url('http://localhost:3000/img/chat-footer-smile.svg');
-
 .chat {
 
   &__footer {
     padding: 25px;
     border-top: 1px solid #A4A4A4;
+
+    &__wrap{
+      position: relative;
+    }
 
     &__message {
       width: 100%;
@@ -15,7 +15,6 @@ $FooterSmile: url('http://localhost:3000/img/chat-footer-smile.svg');
       border: 0.5px solid rgba(0, 0, 0, 0.24);
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
       cursor: pointer;
-      background: $FooterFile 1% no-repeat, $FooterVoice 2% no-repeat, $FooterSmile 99% no-repeat;
 
       &::placeholder {
         font-family: 'Lato';
@@ -32,28 +31,21 @@ $FooterSmile: url('http://localhost:3000/img/chat-footer-smile.svg');
         outline: none;
       }
     }
-  }
-}
 
-@media screen and (max-width: 1630px) {
+    &__img{
+      position: absolute;
+      top: 10px;
 
-  .chat {
-
-    &__footer {
-      &__message {
-        background: $FooterFile 1% no-repeat, $FooterVoice 2.5% no-repeat, $FooterSmile 99% no-repeat;
+      &_file{
+        left: 5px;
       }
-    }
-  }
-}
 
-@media screen and (max-width: 1330px) {
+      &_voice {
+        left: 25px;
+      }
 
-  .chat {
-
-    &__footer {
-      &__message {
-        background: $FooterFile 1% no-repeat, $FooterVoice 3.5% no-repeat, $FooterSmile 99% no-repeat;
+      &_smile {
+        right: 10px;
       }
     }
   }
@@ -94,18 +86,6 @@ $FooterSmile: url('http://localhost:3000/img/chat-footer-smile.svg');
   }
 }
 
-@media screen and (max-width: 840px) {
-
-  .chat {
-
-    &__footer {
-      &__message {
-        background: $FooterFile 1% no-repeat, $FooterVoice 4.5% no-repeat, $FooterSmile 99% no-repeat;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 700px) {
 
   .chat {
@@ -118,13 +98,17 @@ $FooterSmile: url('http://localhost:3000/img/chat-footer-smile.svg');
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 420px) {
 
   .chat {
 
     &__footer {
-      &__message {
-        background: $FooterFile 1% no-repeat, $FooterVoice 7% no-repeat, $FooterSmile 99% no-repeat;
+
+      &__img {
+
+        &_voice{
+          left: 20px;
+        }
       }
     }
   }

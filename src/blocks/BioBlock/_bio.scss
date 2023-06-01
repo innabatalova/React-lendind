@@ -67,13 +67,13 @@
 
 
         &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 25px;
             height: 25px;
             border-radius: 5px;
             background-color: #3577EF;
-            background-image: url('http://localhost:3000/img/bio-message-list.svg');
-            background-repeat: no-repeat;
-            background-position: 50%;
             cursor: pointer;
 
             &:hover {
@@ -93,14 +93,14 @@
     }
 }
 
-.bioclose{
+.bioclose {
     position: absolute;
     right: -190px !important;
 }
 
-@media screen and ( max-width: 1080px ){
-    .bio{
-      position: absolute;
-      right: 0;
+@media screen and (max-width: 1080px) {
+    .bio {
+        position: absolute;
+        right: 0;
     }
-  }
+}

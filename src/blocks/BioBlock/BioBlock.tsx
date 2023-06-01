@@ -11,12 +11,9 @@ import IconFacebook from "../../static/img/bio-icon-facebook.svg"
 import IconTwitter from "../../static/img/bio-icon-twitter.svg"
 import IconInstagram from "../../static/img/bio-icon-instagram.svg"
 import IconIn from "../../static/img/bio-icon-in.svg"
-
-import BioArrowImg from "../../static/img/bio-message-list.svg"
+import BioButtonList from "../../static/img/bio-message-list.svg"
 
 const BioBlock = ({ classVisible, clicked, classArrowRotate }: IVisibleProps) => {
-  
-  console.log(BioArrowImg);
 
   return (
     <div className={`bio ` + classVisible} onClick={clicked}>
@@ -35,7 +32,9 @@ const BioBlock = ({ classVisible, clicked, classArrowRotate }: IVisibleProps) =>
         </div>
         <div className="bio-button">
           <button className="bio-button__message">Message</button>
-          <div className="bio-button__list"></div>
+          <div className='bio-button__list'>
+            <img src={BioButtonList} alt="bio-button list" />
+          </div>
         </div>
         <BioField title="Username" text="@amilia_lu" />
         <BioField title="Email" text="a-luna@gmail.com" />
